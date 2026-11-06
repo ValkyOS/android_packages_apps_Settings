@@ -15590,4 +15590,8 @@
     <!-- Search keywords for Human interface device access setting -->
     <string name="keywords_access_hid">hid, human, access, device</string>
     <!-- Access HID end -->
+
+    <!-- ValkyOS: security reboot after locked inactivity. -->
+    <string name="valkyos_auto_reboot_title">Automatic security reboot</string>
+    <string name="valkyos_auto_reboot_summary">Reboots after eight continuous hours locked. After rebooting, it waits for an unlock before counting again.</string>
 </resources>

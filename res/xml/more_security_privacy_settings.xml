@@ -138,6 +138,14 @@
         android:key="security_category"
         android:title="@string/security_header" />
 
+    <SwitchPreferenceCompat
+        android:order="220"
+        android:key="valkyos_auto_reboot_enabled"
+        android:title="@string/valkyos_auto_reboot_title"
+        android:summary="@string/valkyos_auto_reboot_summary"
+        android:defaultValue="true"
+        settings:controller="com.android.settings.security.ValkyAutoRebootPreferenceController" />
+
     <Preference
         android:order="230"
         android:key="content_protection_preference"
