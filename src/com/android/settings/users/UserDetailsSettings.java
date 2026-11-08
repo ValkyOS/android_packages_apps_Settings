@@ -44,6 +44,7 @@ import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
+import androidx.preference.SwitchPreferenceCompat;
 import androidx.preference.TwoStatePreference;
 
 import com.android.settings.R;
@@ -81,6 +82,9 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
     private static final String KEY_APP_AND_CONTENT_ACCESS = "app_and_content_access";
     private static final String KEY_APP_COPYING = "app_copying";
 
+    private static final String KEY_APP_INSTALLS = "app_installs";
+    private static final String KEY_RUN_IN_BACKGROUND = "allow_run_in_background";
+
     /** Integer extra containing the userId to manage */
     static final String EXTRA_USER_ID = "user_id";
 
@@ -95,7 +99,7 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
     private static final int DIALOG_REVOKE_LAST_ADMIN = 9;
 
     /** Whether to enable the app_copying fragment. */
-    private static final boolean SHOW_APP_COPYING_PREF = false;
+    private static final boolean SHOW_APP_COPYING_PREF = true;
     private static final int MESSAGE_PADDING = 20;
     @VisibleForTesting
     static final int REQUEST_CONFIRM_REMOVE = 1;
@@ -118,10 +122,13 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
     Preference mRemoveUserPref;
     @VisibleForTesting
     TwoStatePreference mGrantAdminPref;
+    Preference mAppsInstallsPref;
+    private SwitchPreferenceCompat mRunInBackgroundPref;
 
     @VisibleForTesting
     /** The user being studied (not the user doing the studying). */
     UserInfo mUserInfo;
+    private UserRestrictions userRestrictions;
 
     @Override
     public int getMetricsCategory() {
@@ -153,6 +160,9 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
         if (mUserInfo.isGuest() && mGuestUserAutoCreated) {
             mRemoveUserPref.setEnabled((mUserInfo.flags & UserInfo.FLAG_INITIALIZED) != 0);
         }
+        mAppsInstallsPref.setSummary(UserAppsInstallSettings.getDescription(
+                requireContext(), userRestrictions));
+        mAppCopyingPref.setEnabled(!userRestrictions.isSet(UserManager.DISALLOW_INSTALL_APPS));
     }
 
     @Override
@@ -195,6 +205,9 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
         } else if (preference == mAppCopyingPref) {
             openAppCopyingScreen();
             return true;
+        } else if (preference == mAppsInstallsPref) {
+            UserAppsInstallSettings.launch(preference, mUserInfo.id);
+            return true;
         }
         return false;
     }
@@ -226,7 +239,11 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
                 showDialog(DIALOG_CONFIRM_GRANT_ADMIN);
             }
             return false;
+        } else if (preference == mRunInBackgroundPref) {
+            userRestrictions.set(UserManager.DISALLOW_RUN_IN_BACKGROUND, !((boolean) newValue));
+            return true;
         }
+
         return true;
     }
 
@@ -408,6 +425,7 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
         boolean isNewUser =
                 arguments.getBoolean(AppRestrictionsFragment.EXTRA_NEW_USER, false);
         mUserInfo = mUserManager.getUserInfo(userId);
+        userRestrictions = UserRestrictions.createInstance(mUserManager, mUserInfo);
 
         mSwitchUserPref = findPreference(KEY_SWITCH_USER);
         mPhonePref = findPreference(KEY_ENABLE_TELEPHONY_CALLING);
@@ -417,6 +435,8 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
         mGrantAdminPref = findPreference(KEY_GRANT_ADMIN);
 
         mGrantAdminPref.setChecked(mUserInfo.isAdmin());
+        mAppsInstallsPref = findPreference(KEY_APP_INSTALLS);
+        mRunInBackgroundPref = findPreference(KEY_RUN_IN_BACKGROUND);
 
         mSwitchUserPref.setVisible(mUserCaps.mUserSwitchingUiEnabled
                 && UserHandle.myUserId() != mUserInfo.id);
@@ -473,6 +493,8 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
             removePreference(KEY_ENABLE_TELEPHONY_CALLING);
             removePreference(KEY_APP_AND_CONTENT_ACCESS);
             removePreference(KEY_APP_COPYING);
+            removePreference(KEY_APP_INSTALLS);
+            removePreference(KEY_RUN_IN_BACKGROUND);
         } else {
             if (!Utils.isVoiceCapable(context)) { // no telephony
                 removePreference(KEY_ENABLE_TELEPHONY_CALLING);
@@ -496,10 +518,12 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
                 if (!SHOW_APP_COPYING_PREF) {
                     removePreference(KEY_APP_COPYING);
                 }
+                removePreference(KEY_RUN_IN_BACKGROUND);
             } else {
                 mPhonePref.setChecked(!mUserManager.hasUserRestriction(
                         UserManager.DISALLOW_OUTGOING_CALLS, new UserHandle(userId)));
-                removePreference(KEY_APP_COPYING);
+                mRunInBackgroundPref.setChecked(!userRestrictions.isSet(
+                        UserManager.DISALLOW_RUN_IN_BACKGROUND));
             }
 
             // Remove preference KEY_REMOVE_USER if DISALLOW_REMOVE_USER restriction is set
@@ -508,10 +532,12 @@ public class UserDetailsSettings extends SettingsPreferenceFragment
                 removePreference(KEY_REMOVE_USER);
             }
 
+            mAppsInstallsPref.setOnPreferenceClickListener(this);
             mPhonePref.setOnPreferenceChangeListener(this);
             mGrantAdminPref.setOnPreferenceChangeListener(this);
             mAppAndContentAccessPref.setOnPreferenceClickListener(this);
             mAppCopyingPref.setOnPreferenceClickListener(this);
+            mRunInBackgroundPref.setOnPreferenceChangeListener(this);
         }
     }
 

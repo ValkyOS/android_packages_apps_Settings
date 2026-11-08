@@ -6235,4 +6235,14 @@
     <!-- ValkyOS: reinicio de seguridad tras inactividad bloqueada. -->
     <string name="valkyos_auto_reboot_title">Reinicio automático de seguridad</string>
     <string name="valkyos_auto_reboot_summary">Reinicia después de ocho horas continuas bloqueado. Tras reiniciar, espera un desbloqueo antes de volver a contar.</string>
+
+    <!-- ValkyOS: opciones por usuario de instalacion y segundo plano (de GrapheneOS). -->
+    <string name="user_app_install">Instalación y actualización de apps</string>
+    <string name="user_app_install_enabled">Habilitado</string>
+    <string name="user_app_install_enabled_first_party_sources">Habilitado solo desde fuentes del sistema</string>
+    <string name="user_app_install_disabled">Deshabilitado</string>
+    <string name="user_app_install_enabled_desc">Permitir instalar y actualizar apps</string>
+    <string name="user_app_install_enabled_first_party_sources_desc">Permitir instalar y actualizar apps solo desde fuentes del sistema</string>
+    <string name="user_app_install_disabled_desc">No permitir instalar ni actualizar apps</string>
+    <string name="user_run_in_background">Permitir ejecución en segundo plano</string>
 </resources>
