@@ -35,6 +35,8 @@
             android:layout_marginTop="-8dp"
             android:orientation="vertical">
 
+            <include layout="@layout/valkyos_homepage_header"/>
+
             <FrameLayout
                 android:id="@+id/suggestion_content"
                 android:layout_width="match_parent"
