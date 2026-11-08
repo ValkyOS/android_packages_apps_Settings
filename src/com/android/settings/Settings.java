@@ -659,6 +659,8 @@ public class Settings extends SettingsActivity {
      */
     public static class AppDashboardActivity extends SettingsActivity {}
 
+    public static class AppManagePlayIntegrityApiActivity extends SettingsActivity {}
+
     public static class AdaptiveBrightnessActivity extends SettingsActivity { /* empty */ }
 
     /**

@@ -15615,4 +15615,18 @@
     <string name="conn_checks_disabled">Off</string>
     <string name="conn_checks_title">Internet connectivity checks</string>
     <string name="conn_checks_footer">A connectivity check is a small empty request used to find out whether the current network has internet access. It covers the HTTP, HTTPS, DNS, DNS-over-TLS and DNS-over-HTTPS checks.</string>
+
+    <!-- ValkyOS: Play Integrity API notifications and per-app blocking (from GrapheneOS). -->
+    <string name="aep_default">Default (%1$s)</string>
+    <string name="aep_enabled">Enabled</string>
+    <string name="aep_disabled">Disabled</string>
+    <string name="app_play_integrity_api">Play Integrity API</string>
+    <string name="app_play_integrity_api_blocked">Blocked</string>
+    <string name="app_play_integrity_api_not_blocked">Not blocked</string>
+    <string name="app_play_integrity_block_usage_attempts">Block usage attempts</string>
+    <string name="app_play_integrity_block_usage_attempts_summary_on">Play Integrity API usage attempts will fail with the \"API is not available\" error code</string>
+    <string name="app_play_integrity_contact_app_developer">Contact app developer</string>
+    <string name="app_play_integrity_see_all_apps">Show apps that used the Play Integrity API</string>
+    <string name="app_play_integrity_show_usage_notifications">Show usage notifications</string>
+    <string name="app_play_integrity_top_intro">The Play Integrity API allows services to check properties of a device through their app. Most services require the device or strong integrity level, which needs the unmodified stock OS with a locked bootloader on a device licensing Google Mobile Services, so ValkyOS does not pass them. Not every app using it refuses to work: some keep working if the API is blocked. Apps can use the standard Android hardware attestation API instead.</string>
 </resources>

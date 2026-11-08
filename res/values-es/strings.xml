@@ -6252,4 +6252,18 @@
     <string name="conn_checks_disabled">Desactivadas</string>
     <string name="conn_checks_title">Comprobaciones de conexión a internet</string>
     <string name="conn_checks_footer">Una comprobación de conexión es una pequeña solicitud vacía que sirve para saber si la red actual tiene acceso a internet. Incluye las comprobaciones HTTP, HTTPS, DNS, DNS sobre TLS y DNS sobre HTTPS.</string>
+
+    <!-- ValkyOS: avisos y bloqueo por app de la API Play Integrity (de GrapheneOS). -->
+    <string name="aep_default">Predeterminado (%1$s)</string>
+    <string name="aep_enabled">Activado</string>
+    <string name="aep_disabled">Desactivado</string>
+    <string name="app_play_integrity_api">API Play Integrity</string>
+    <string name="app_play_integrity_api_blocked">Bloqueada</string>
+    <string name="app_play_integrity_api_not_blocked">No bloqueada</string>
+    <string name="app_play_integrity_block_usage_attempts">Bloquear los intentos de uso</string>
+    <string name="app_play_integrity_block_usage_attempts_summary_on">Los intentos de usar la API Play Integrity fallarán con el error \"la API no está disponible\"</string>
+    <string name="app_play_integrity_contact_app_developer">Contactar al desarrollador de la app</string>
+    <string name="app_play_integrity_see_all_apps">Ver las apps que usaron la API Play Integrity</string>
+    <string name="app_play_integrity_show_usage_notifications">Mostrar avisos de uso</string>
+    <string name="app_play_integrity_top_intro">La API Play Integrity permite que los servicios revisen propiedades del dispositivo a través de su app. La mayoría exige el nivel de dispositivo o el fuerte, que requieren el sistema original de fábrica con el bootloader bloqueado en un equipo con licencia de los servicios de Google, por eso ValkyOS no los pasa. No todas las apps que la usan dejan de funcionar: algunas siguen andando si se bloquea la API. Las apps pueden usar en su lugar la atestación de hardware estándar de Android.</string>
 </resources>
