@@ -6245,4 +6245,11 @@
     <string name="user_app_install_enabled_first_party_sources_desc">Permitir instalar y actualizar apps solo desde fuentes del sistema</string>
     <string name="user_app_install_disabled_desc">No permitir instalar ni actualizar apps</string>
     <string name="user_run_in_background">Permitir ejecución en segundo plano</string>
+
+    <!-- ValkyOS: comprobaciones de conexion a internet (de GrapheneOS). -->
+    <string name="conn_checks_grapheneos_server">Servidor de GrapheneOS</string>
+    <string name="conn_checks_google_server">Servidor estándar (Google)</string>
+    <string name="conn_checks_disabled">Desactivadas</string>
+    <string name="conn_checks_title">Comprobaciones de conexión a internet</string>
+    <string name="conn_checks_footer">Una comprobación de conexión es una pequeña solicitud vacía que sirve para saber si la red actual tiene acceso a internet. Incluye las comprobaciones HTTP, HTTPS, DNS, DNS sobre TLS y DNS sobre HTTPS.</string>
 </resources>

@@ -15608,4 +15608,11 @@
     <string name="user_app_install_disabled_desc">Disable app installs and updates</string>
     <!-- Title of preference to enable running in background [CHAR LIMIT=40] -->
     <string name="user_run_in_background">Allow running in background</string>
+
+    <!-- ValkyOS: internet connectivity checks (from GrapheneOS). -->
+    <string name="conn_checks_grapheneos_server">GrapheneOS server</string>
+    <string name="conn_checks_google_server">Standard (Google) server</string>
+    <string name="conn_checks_disabled">Off</string>
+    <string name="conn_checks_title">Internet connectivity checks</string>
+    <string name="conn_checks_footer">A connectivity check is a small empty request used to find out whether the current network has internet access. It covers the HTTP, HTTPS, DNS, DNS-over-TLS and DNS-over-HTTPS checks.</string>
 </resources>
