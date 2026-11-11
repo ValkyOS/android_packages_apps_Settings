@@ -11,4 +11,11 @@
     <string name="valkyos_donate_notification_text">Toca para saber más</string>
     <string name="valkyos_donate_channel_name">Donaciones</string>
     <string name="valkyos_donate_channel_desc">Recordatorio mensual para apoyar ValkyOS</string>
+
+    <!-- Wi-Fi > red > Privacidad (MAC aleatoria por conexion, de GrapheneOS) -->
+    <string-array name="wifi_privacy_entries_ext">
+        <item>Usar MAC aleatoria por conexión (predeterminado)</item>
+        <item>Usar MAC aleatoria por red</item>
+        <item>Usar MAC del dispositivo</item>
+    </string-array>
 </resources>
