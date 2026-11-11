@@ -236,4 +236,29 @@
             settings:controller="com.android.settings.deviceinfo.BuildNumberPreferenceController"/>
     </PreferenceCategory>
 
+    <!-- ValkyOS: creator and donations -->
+    <PreferenceCategory
+        android:key="valkyos_about_category"
+        android:title="@string/valkyos_about_category">
+        <Preference
+            android:key="valkyos_creator"
+            android:order="60"
+            android:title="@string/valkyos_creator_title"
+            android:summary="@string/valkyos_creator_summary">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="https://ko-fi.com/dvyjp" />
+        </Preference>
+
+        <Preference
+            android:key="valkyos_support"
+            android:order="61"
+            android:icon="@drawable/ic_valkyos_donate"
+            android:title="@string/valkyos_support_title"
+            android:summary="@string/valkyos_support_summary">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.android.settings"
+                    android:targetClass="com.android.settings.valkyos.DonateActivity" />
+        </Preference>
+    </PreferenceCategory>
+
 </PreferenceScreen>

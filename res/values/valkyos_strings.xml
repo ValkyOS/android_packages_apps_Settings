@@ -6,4 +6,21 @@
 <resources>
     <!-- ValkyOS name shown above the Settings homepage list. -->
     <string name="valkyos_homepage_name" translatable="false">ValkyOS</string>
+
+    <!-- About phone: ValkyOS category -->
+    <string name="valkyos_about_category" translatable="false">ValkyOS</string>
+    <string name="valkyos_creator_title">Created by</string>
+    <string name="valkyos_creator_summary" translatable="false">dvy-jp</string>
+    <string name="valkyos_support_title">Support ValkyOS</string>
+    <string name="valkyos_support_summary">Donate to help pay the build servers and test phones</string>
+
+    <!-- Donation screen and reminder -->
+    <string name="valkyos_donate_url" translatable="false">https://ko-fi.com/dvyjp</string>
+    <string name="valkyos_donate_title">ValkyOS needs your help</string>
+    <string name="valkyos_donate_message">ValkyOS is an independent project. We need your help to pay the build servers and the test phones.\n\nA small donation helps keep the project alive. You can dismiss this message, but your support means a lot.</string>
+    <string name="valkyos_donate_button">Donate now</string>
+    <string name="valkyos_donate_later">Later</string>
+    <string name="valkyos_donate_notification_text">Tap to learn more</string>
+    <string name="valkyos_donate_channel_name">Donations</string>
+    <string name="valkyos_donate_channel_desc">Monthly reminder to support ValkyOS</string>
 </resources>

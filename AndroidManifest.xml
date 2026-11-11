@@ -6328,5 +6328,24 @@
                 android:value="@string/menu_key_apps"/>
         </activity>
 
+        <!-- ValkyOS: donation screen and monthly reminder -->
+        <activity android:name=".valkyos.DonateActivity"
+                  android:label="@string/valkyos_donate_title"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:excludeFromRecents="true"
+                  android:exported="false"
+                  android:taskAffinity=".valkyos.DonateActivity" />
+
+        <receiver android:name=".valkyos.DonateReceiver"
+                  android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_UNLOCKED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.android.settings.valkyos.action.DONATE_NUDGE" />
+            </intent-filter>
+        </receiver>
+
     </application>
 </manifest>

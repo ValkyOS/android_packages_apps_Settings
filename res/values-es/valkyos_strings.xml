@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2026 The ValkyOS Project. SPDX-License-Identifier: Apache-2.0 -->
+<resources>
+    <string name="valkyos_creator_title">Creado por</string>
+    <string name="valkyos_support_title">Apoyar ValkyOS</string>
+    <string name="valkyos_support_summary">Dona para ayudar a pagar los servidores de compilación y los teléfonos de prueba</string>
+    <string name="valkyos_donate_title">ValkyOS necesita tu ayuda</string>
+    <string name="valkyos_donate_message">ValkyOS es un proyecto independiente. Necesitamos tu ayuda para pagar los servidores de compilación y los teléfonos de prueba.\n\nUna pequeña donación ayuda a mantener el proyecto vivo. Puedes cerrar este mensaje, pero tu apoyo significa mucho.</string>
+    <string name="valkyos_donate_button">Donar ahora</string>
+    <string name="valkyos_donate_later">Más tarde</string>
+    <string name="valkyos_donate_notification_text">Toca para saber más</string>
+    <string name="valkyos_donate_channel_name">Donaciones</string>
+    <string name="valkyos_donate_channel_desc">Recordatorio mensual para apoyar ValkyOS</string>
+</resources>
