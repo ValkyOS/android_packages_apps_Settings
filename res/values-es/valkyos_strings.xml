@@ -19,6 +19,9 @@
         <item>Usar MAC del dispositivo</item>
     </string-array>
 
+    <!-- Huevo de pascua: Valky en el cielo -->
+    <string name="valkyos_easter_egg_hint">Toca la V</string>
+
     <!-- Ubicacion: servidor del GPS asistido (SUPL) -->
     <string name="valkyos_supl_server_title">Servidor del GPS asistido</string>
     <string-array name="valkyos_supl_server_entries">

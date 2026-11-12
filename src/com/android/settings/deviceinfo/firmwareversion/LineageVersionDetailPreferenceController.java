@@ -44,9 +44,10 @@ public class LineageVersionDetailPreferenceController extends BasePreferenceCont
 
     private static final String KEY_LINEAGE_VERSION_PROP = "ro.lineage.version";
 
-    private static final String PLATLOGO_PACKAGE_NAME = "org.lineageos.lineageparts";
+    // ValkyOS: open "Valky in the sky" instead of the LineageOS logo.
+    private static final String PLATLOGO_PACKAGE_NAME = "com.android.settings";
     private static final String PLATLOGO_ACTIVITY_CLASS =
-            PLATLOGO_PACKAGE_NAME + ".logo.PlatLogoActivity";
+            "com.android.settings.valkyos.ValkyLogoActivity";
 
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];

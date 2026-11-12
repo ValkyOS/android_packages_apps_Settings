@@ -6328,6 +6328,14 @@
                 android:value="@string/menu_key_apps"/>
         </activity>
 
+        <!-- ValkyOS easter egg: Valky in the sky -->
+        <activity android:name=".valkyos.ValkyLogoActivity"
+                  android:label="@string/valkyos_easter_egg_name"
+                  android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen"
+                  android:excludeFromRecents="true"
+                  android:exported="false"
+                  android:taskAffinity=".valkyos.ValkyLogoActivity" />
+
         <!-- ValkyOS: donation screen and monthly reminder -->
         <activity android:name=".valkyos.DonateActivity"
                   android:label="@string/valkyos_donate_title"

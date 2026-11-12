@@ -24,6 +24,10 @@
     <string name="valkyos_donate_channel_name">Donations</string>
     <string name="valkyos_donate_channel_desc">Monthly reminder to support ValkyOS</string>
 
+    <!-- Easter egg: Valky in the sky (About phone > ValkyOS version, tap three times) -->
+    <string name="valkyos_easter_egg_hint">Tap the V</string>
+    <string name="valkyos_easter_egg_name" translatable="false">Valky ♡</string>
+
     <!-- Location: assisted GPS (SUPL) server -->
     <string name="valkyos_supl_server_title">Assisted GPS server</string>
     <string-array name="valkyos_supl_server_entries">
