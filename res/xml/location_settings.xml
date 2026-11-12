@@ -50,6 +50,15 @@
         android:summary="@string/assisted_gps_summary"
         settings:controller="com.android.settings.location.AgpsPreferenceController"/>
 
+    <ListPreference
+        android:key="valkyos_supl_server"
+        android:dependency="assisted_gps"
+        android:title="@string/valkyos_supl_server_title"
+        android:entries="@array/valkyos_supl_server_entries"
+        android:entryValues="@array/valkyos_supl_server_values"
+        android:dialogTitle="@string/valkyos_supl_server_title"
+        settings:controller="com.android.settings.location.SuplServerPreferenceController"/>
+
     <com.android.settingslib.widget.UntitledPreferenceCategory
         android:key="location_advanced_settings">
 

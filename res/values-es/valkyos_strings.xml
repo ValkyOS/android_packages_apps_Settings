@@ -18,4 +18,11 @@
         <item>Usar MAC aleatoria por red</item>
         <item>Usar MAC del dispositivo</item>
     </string-array>
+
+    <!-- Ubicacion: servidor del GPS asistido (SUPL) -->
+    <string name="valkyos_supl_server_title">Servidor del GPS asistido</string>
+    <string-array name="valkyos_supl_server_entries">
+        <item>Intermediario de GrapheneOS (predeterminado)</item>
+        <item>Servidor estándar (Google)</item>
+    </string-array>
 </resources>

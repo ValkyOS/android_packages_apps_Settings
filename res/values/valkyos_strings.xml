@@ -23,4 +23,15 @@
     <string name="valkyos_donate_notification_text">Tap to learn more</string>
     <string name="valkyos_donate_channel_name">Donations</string>
     <string name="valkyos_donate_channel_desc">Monthly reminder to support ValkyOS</string>
+
+    <!-- Location: assisted GPS (SUPL) server -->
+    <string name="valkyos_supl_server_title">Assisted GPS server</string>
+    <string-array name="valkyos_supl_server_entries">
+        <item>GrapheneOS proxy (default)</item>
+        <item>Standard server (Google)</item>
+    </string-array>
+    <string-array name="valkyos_supl_server_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
 </resources>
