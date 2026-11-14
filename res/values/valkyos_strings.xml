@@ -41,6 +41,7 @@
 
     <!-- Lock screen: clock styles (from crDroid) -->
     <string name="valkyos_clock_style_title">Clock style</string>
+    <string name="valkyos_clock_style_restart">Applying the clock style…</string>
     <string-array name="valkyos_clock_style_entries">
         <item>Default</item>
         <item>OxygenOS</item>

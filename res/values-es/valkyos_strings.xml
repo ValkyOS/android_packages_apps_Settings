@@ -31,6 +31,7 @@
 
     <!-- Pantalla de bloqueo: estilos del reloj -->
     <string name="valkyos_clock_style_title">Estilo del reloj</string>
+    <string name="valkyos_clock_style_restart">Aplicando el estilo del reloj…</string>
     <string-array name="valkyos_clock_style_entries">
         <item>Predeterminado</item>
         <item>OxygenOS</item>

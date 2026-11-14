@@ -8,11 +8,13 @@ package com.android.settings.display;
 import android.content.Context;
 import android.os.UserHandle;
 import android.provider.Settings;
+import android.widget.Toast;
 
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
+import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
 /**
@@ -62,6 +64,8 @@ public class ClockStylePreferenceController extends BasePreferenceController
         } catch (NumberFormatException e) {
             return false;
         }
+        // SystemUI restarts itself to load the new clock style.
+        Toast.makeText(mContext, R.string.valkyos_clock_style_restart, Toast.LENGTH_SHORT).show();
         Settings.Secure.putIntForUser(mContext.getContentResolver(), SETTING_CLOCK_STYLE,
                 value, UserHandle.USER_CURRENT);
         updateState(preference);
