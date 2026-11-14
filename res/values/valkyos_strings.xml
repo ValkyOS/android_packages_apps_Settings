@@ -38,4 +38,147 @@
         <item>0</item>
         <item>1</item>
     </string-array>
+
+    <!-- Lock screen: clock styles (from crDroid) -->
+    <string name="valkyos_clock_style_title">Clock style</string>
+    <string-array name="valkyos_clock_style_entries">
+        <item>Default</item>
+        <item>OxygenOS</item>
+        <item>OxygenOS 2</item>
+        <item>Centered</item>
+        <item>Simple</item>
+        <item>MIUI</item>
+        <item>IDE</item>
+        <item>Moto</item>
+        <item>Stylish</item>
+        <item>Stylish 2</item>
+        <item>Stylish 3</item>
+        <item>Stylish 4</item>
+        <item>Stylish 5</item>
+        <item>Stylish 6</item>
+        <item>Stylish 7</item>
+        <item>Stylish 8</item>
+        <item>Stylish 9</item>
+        <item>Stylish 10</item>
+        <item>Word</item>
+        <item>Life</item>
+        <item>A9</item>
+        <item>Nothing 1</item>
+        <item>Nothing 2</item>
+        <item>Numbers</item>
+        <item>Accent</item>
+        <item>Analog</item>
+        <item>Block</item>
+        <item>Bubble</item>
+        <item>Label</item>
+        <item>iOS</item>
+        <item>Taden</item>
+        <item>Montserrat</item>
+        <item>Encode</item>
+        <item>Nothing 3</item>
+        <item>Outline</item>
+        <item>Ovalium</item>
+        <item>Rectangle</item>
+        <item>Wallet</item>
+        <item>Clavicula</item>
+        <item>KLN</item>
+        <item>Miring</item>
+        <item>Scapula</item>
+        <item>Sternum</item>
+        <item>Spark circle</item>
+        <item>Spark list</item>
+        <item>MIUI 2</item>
+        <item>iOS 2</item>
+        <item>iOS 3</item>
+        <item>iOS 4</item>
+        <item>iOS 5</item>
+        <item>iOS 6</item>
+        <item>iOS 7</item>
+        <item>iOS 8</item>
+        <item>iOS 9</item>
+        <item>iOS 10</item>
+        <item>iOS 11</item>
+        <item>iOS 12</item>
+        <item>iOS 13</item>
+        <item>iOS 14</item>
+        <item>Big 1</item>
+        <item>Big 2</item>
+        <item>Big 3</item>
+        <item>Big 4</item>
+        <item>Sweet</item>
+        <item>Pixel</item>
+        <item>Samurai</item>
+        <item>Gateway</item>
+        <item>Tall</item>
+    </string-array>
+    <string-array name="valkyos_clock_style_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+    </string-array>
 </resources>

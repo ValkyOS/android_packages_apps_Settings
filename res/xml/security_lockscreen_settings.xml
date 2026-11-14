@@ -94,6 +94,14 @@
             android:title="@string/lockscreen_double_line_clock_setting_toggle"
             android:summary="@string/lockscreen_double_line_clock_summary"
             settings:controller="com.android.settings.display.LockscreenClockPreferenceController" />
+
+        <ListPreference
+            android:key="valkyos_lockscreen_clock_style"
+            android:title="@string/valkyos_clock_style_title"
+            android:entries="@array/valkyos_clock_style_entries"
+            android:entryValues="@array/valkyos_clock_style_values"
+            android:dialogTitle="@string/valkyos_clock_style_title"
+            settings:controller="com.android.settings.display.ClockStylePreferenceController" />
     </PreferenceCategory>
 
     <PreferenceCategory

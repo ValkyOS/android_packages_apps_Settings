@@ -28,4 +28,77 @@
         <item>Intermediario de GrapheneOS (predeterminado)</item>
         <item>Servidor estándar (Google)</item>
     </string-array>
+
+    <!-- Pantalla de bloqueo: estilos del reloj -->
+    <string name="valkyos_clock_style_title">Estilo del reloj</string>
+    <string-array name="valkyos_clock_style_entries">
+        <item>Predeterminado</item>
+        <item>OxygenOS</item>
+        <item>OxygenOS 2</item>
+        <item>Centrado</item>
+        <item>Simple</item>
+        <item>MIUI</item>
+        <item>IDE</item>
+        <item>Moto</item>
+        <item>Stylish</item>
+        <item>Stylish 2</item>
+        <item>Stylish 3</item>
+        <item>Stylish 4</item>
+        <item>Stylish 5</item>
+        <item>Stylish 6</item>
+        <item>Stylish 7</item>
+        <item>Stylish 8</item>
+        <item>Stylish 9</item>
+        <item>Stylish 10</item>
+        <item>Palabras</item>
+        <item>Life</item>
+        <item>A9</item>
+        <item>Nothing 1</item>
+        <item>Nothing 2</item>
+        <item>Números</item>
+        <item>Acento</item>
+        <item>Analógico</item>
+        <item>Bloques</item>
+        <item>Burbujas</item>
+        <item>Etiqueta</item>
+        <item>iOS</item>
+        <item>Taden</item>
+        <item>Montserrat</item>
+        <item>Encode</item>
+        <item>Nothing 3</item>
+        <item>Contorno</item>
+        <item>Ovalium</item>
+        <item>Rectángulo</item>
+        <item>Billetera</item>
+        <item>Clavícula</item>
+        <item>KLN</item>
+        <item>Miring</item>
+        <item>Escápula</item>
+        <item>Esternón</item>
+        <item>Spark círculo</item>
+        <item>Spark lista</item>
+        <item>MIUI 2</item>
+        <item>iOS 2</item>
+        <item>iOS 3</item>
+        <item>iOS 4</item>
+        <item>iOS 5</item>
+        <item>iOS 6</item>
+        <item>iOS 7</item>
+        <item>iOS 8</item>
+        <item>iOS 9</item>
+        <item>iOS 10</item>
+        <item>iOS 11</item>
+        <item>iOS 12</item>
+        <item>iOS 13</item>
+        <item>iOS 14</item>
+        <item>Grande 1</item>
+        <item>Grande 2</item>
+        <item>Grande 3</item>
+        <item>Grande 4</item>
+        <item>Sweet</item>
+        <item>Pixel</item>
+        <item>Samurái</item>
+        <item>Gateway</item>
+        <item>Alto</item>
+    </string-array>
 </resources>
