@@ -31,7 +31,18 @@
 
     <!-- Pantalla de bloqueo: estilos del reloj -->
     <string name="valkyos_clock_style_title">Estilo del reloj</string>
-    <string name="valkyos_clock_style_restart">Aplicando el estilo del reloj…</string>
+    <string name="valkyos_clock_style_restart">Aplicando los cambios del reloj…</string>
+    <string name="valkyos_clock_customization_title">Personalizar reloj</string>
+    <string name="valkyos_clock_color_title">Color</string>
+    <string name="valkyos_clock_color_default">Blanco</string>
+    <string name="valkyos_clock_color_accent">Acento del sistema</string>
+    <string name="valkyos_clock_color_custom">Personalizado</string>
+    <string name="valkyos_clock_choose_color">Elegir color exacto</string>
+    <string name="valkyos_clock_color_hex_label">Color hexadecimal (#RRGGBB)</string>
+    <string name="valkyos_clock_color_invalid">Escribe un color válido, por ejemplo #4F7CFF</string>
+    <string name="valkyos_clock_size_value">Tamaño: %1$d%%</string>
+    <string name="valkyos_clock_no_custom_color">Este estilo conserva sus colores originales</string>
+    <string name="valkyos_clock_default_style_info">El tamaño y el color se aplican a los relojes personalizados</string>
     <string-array name="valkyos_clock_style_entries">
         <item>Predeterminado</item>
         <item>OxygenOS</item>

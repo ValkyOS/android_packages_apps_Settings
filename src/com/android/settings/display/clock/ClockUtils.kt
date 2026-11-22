@@ -11,6 +11,20 @@ object ClockUtils {
 
     // Keep in sync with Settings.Secure.LOCK_SCREEN_CUSTOM_CLOCK_STYLE.
     const val SETTING_CLOCK_STYLE = "lock_screen_custom_clock_style"
+    const val SETTING_CLOCK_COLOR_MODE = "lock_screen_custom_clock_color_mode"
+    const val SETTING_CLOCK_CUSTOM_COLOR = "lock_screen_custom_clock_custom_color"
+    const val SETTING_CLOCK_SIZE = "lock_screen_custom_clock_size_scale"
+
+    const val COLOR_MODE_DEFAULT = "default"
+    const val COLOR_MODE_ACCENT = "accent"
+    const val COLOR_MODE_CUSTOM = "custom"
+
+    const val DEFAULT_CLOCK_SIZE = 100
+    const val MIN_CLOCK_SIZE = 50
+    const val MAX_CLOCK_SIZE = 150
+
+    // These clocks intentionally keep their own colors in SystemUI.
+    val NO_COLOR_CLOCKS = setOf(1, 2, 25, 26, 45)
 
 
     val CLOCK_LAYOUTS = intArrayOf(

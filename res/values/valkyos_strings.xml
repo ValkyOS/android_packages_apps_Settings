@@ -41,7 +41,18 @@
 
     <!-- Lock screen: clock styles (from crDroid) -->
     <string name="valkyos_clock_style_title">Clock style</string>
-    <string name="valkyos_clock_style_restart">Applying the clock style…</string>
+    <string name="valkyos_clock_style_restart">Applying the clock changes…</string>
+    <string name="valkyos_clock_customization_title">Customize clock</string>
+    <string name="valkyos_clock_color_title">Color</string>
+    <string name="valkyos_clock_color_default">White</string>
+    <string name="valkyos_clock_color_accent">System accent</string>
+    <string name="valkyos_clock_color_custom">Custom</string>
+    <string name="valkyos_clock_choose_color">Choose exact color</string>
+    <string name="valkyos_clock_color_hex_label">Hex color (#RRGGBB)</string>
+    <string name="valkyos_clock_color_invalid">Enter a valid color, for example #4F7CFF</string>
+    <string name="valkyos_clock_size_value">Size: %1$d%%</string>
+    <string name="valkyos_clock_no_custom_color">This style keeps its original colors</string>
+    <string name="valkyos_clock_default_style_info">Size and color apply to the custom clock styles</string>
     <string-array name="valkyos_clock_style_entries">
         <item>Default</item>
         <item>OxygenOS</item>
