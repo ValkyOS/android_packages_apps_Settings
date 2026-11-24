@@ -123,4 +123,9 @@
         <item>Gateway</item>
         <item>Tall</item>
     </string-array>
+    <string name="valkyos_panel_animation_category">Panel animation</string>
+    <string name="valkyos_qs_corner_spread_title">Corner spread for combined panel</string>
+    <string name="valkyos_qs_corner_spread_summary">Spread tiles, notifications, and header items from the corner where the pull-down starts</string>
+    <string name="valkyos_qs_corner_spread_dual_title">Corner spread for separate panels</string>
+    <string name="valkyos_qs_corner_spread_dual_summary">Use the corner spread for separate Quick Settings and notification panels</string>
 </resources>

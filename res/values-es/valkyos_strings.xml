@@ -113,4 +113,9 @@
         <item>Gateway</item>
         <item>Alto</item>
     </string-array>
+    <string name="valkyos_panel_animation_category">Animación del panel</string>
+    <string name="valkyos_qs_corner_spread_title">Expansión desde la esquina en el panel combinado</string>
+    <string name="valkyos_qs_corner_spread_summary">Expande los botones, las notificaciones y la cabecera desde la esquina donde comienza el gesto</string>
+    <string name="valkyos_qs_corner_spread_dual_title">Expansión desde la esquina en paneles separados</string>
+    <string name="valkyos_qs_corner_spread_dual_summary">Usa la expansión desde la esquina para los paneles separados de ajustes rápidos y notificaciones</string>
 </resources>

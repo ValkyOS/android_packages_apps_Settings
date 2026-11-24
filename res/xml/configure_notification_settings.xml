@@ -194,6 +194,22 @@
             settings:controller="com.android.settings.system.ShadePanelsPreferenceController"/>
 
         <SwitchPreferenceCompat
+            android:key="valkyos_qs_corner_spread"
+            android:order="31"
+            android:persistent="false"
+            android:title="@string/valkyos_qs_corner_spread_title"
+            android:summary="@string/valkyos_qs_corner_spread_summary"
+            settings:controller="com.android.settings.notification.ValkyOsCornerSpreadPreferenceController" />
+
+        <SwitchPreferenceCompat
+            android:key="valkyos_qs_corner_spread_dual"
+            android:order="32"
+            android:persistent="false"
+            android:title="@string/valkyos_qs_corner_spread_dual_title"
+            android:summary="@string/valkyos_qs_corner_spread_dual_summary"
+            settings:controller="com.android.settings.notification.ValkyOsCornerSpreadPreferenceController" />
+
+        <SwitchPreferenceCompat
              android:key="silent_icons"
              android:order="25"
              android:title="@string/silent_notifications_status_bar"
