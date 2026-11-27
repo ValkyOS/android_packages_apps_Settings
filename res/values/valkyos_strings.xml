@@ -128,4 +128,11 @@
     <string name="valkyos_qs_corner_spread_summary">Spread tiles, notifications, and header items from the corner where the pull-down starts</string>
     <string name="valkyos_qs_corner_spread_dual_title">Corner spread for separate panels</string>
     <string name="valkyos_qs_corner_spread_dual_summary">Use the corner spread for separate Quick Settings and notification panels</string>
+    <string name="clipboard_auto_clear_timeout_title">Clear clipboard automatically</string>
+    <string name="clipboard_auto_clear_never">Never</string>
+    <string name="clipboard_auto_clear_1_minute">After 1 minute</string>
+    <string name="clipboard_auto_clear_5_minutes">After 5 minutes</string>
+    <string name="clipboard_auto_clear_15_minutes">After 15 minutes</string>
+    <string name="clipboard_auto_clear_30_minutes">After 30 minutes</string>
+    <string name="clipboard_auto_clear_1_hour">After 1 hour</string>
 </resources>

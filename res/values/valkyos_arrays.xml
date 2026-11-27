@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clipboard_auto_clear_timeout_entries">
+        <item>@string/clipboard_auto_clear_never</item>
+        <item>@string/clipboard_auto_clear_1_minute</item>
+        <item>@string/clipboard_auto_clear_5_minutes</item>
+        <item>@string/clipboard_auto_clear_15_minutes</item>
+        <item>@string/clipboard_auto_clear_30_minutes</item>
+        <item>@string/clipboard_auto_clear_1_hour</item>
+    </string-array>
+
+    <string-array name="clipboard_auto_clear_timeout_values" translatable="false">
+        <item>0</item>
+        <item>60000</item>
+        <item>300000</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+    </string-array>
+</resources>

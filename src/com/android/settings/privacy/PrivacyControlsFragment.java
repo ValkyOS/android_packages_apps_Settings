@@ -40,6 +40,8 @@ public class PrivacyControlsFragment extends DashboardFragment {
         controllers.add(new CameraToggleController(context, CAMERA_KEY));
         controllers.add(new MicToggleController(context, MIC_KEY));
         controllers.add(new ShowClipAccessNotificationPreferenceController(context));
+        controllers.add(new ClipboardAutoClearPreferenceController(
+                context, ClipboardAutoClearPreferenceController.KEY));
         return controllers;
     }
 

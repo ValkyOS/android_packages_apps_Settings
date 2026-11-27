@@ -118,4 +118,11 @@
     <string name="valkyos_qs_corner_spread_summary">Expande los botones, las notificaciones y la cabecera desde la esquina donde comienza el gesto</string>
     <string name="valkyos_qs_corner_spread_dual_title">Expansión desde la esquina en paneles separados</string>
     <string name="valkyos_qs_corner_spread_dual_summary">Usa la expansión desde la esquina para los paneles separados de ajustes rápidos y notificaciones</string>
+    <string name="clipboard_auto_clear_timeout_title">Borrar el portapapeles automáticamente</string>
+    <string name="clipboard_auto_clear_never">Nunca</string>
+    <string name="clipboard_auto_clear_1_minute">Después de 1 minuto</string>
+    <string name="clipboard_auto_clear_5_minutes">Después de 5 minutos</string>
+    <string name="clipboard_auto_clear_15_minutes">Después de 15 minutos</string>
+    <string name="clipboard_auto_clear_30_minutes">Después de 30 minutos</string>
+    <string name="clipboard_auto_clear_1_hour">Después de 1 hora</string>
 </resources>
